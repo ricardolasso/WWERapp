@@ -15,12 +15,12 @@ Original App Design Project - README Template
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
+- **Category:** Game
+- **Mobile:** IOS 15
+- **Story:** 
+- **Market:** Gamers
 - **Habit:**
-- **Scope:**
+- **Scope:** 16 - 35 years
 
 ## Product Spec
 
@@ -64,12 +64,9 @@ Original App Design Project - README Template
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups ![Screen Shot 2021-10-19 at 8 55 56 PM](https://user-images.githubusercontent.com/88115439/138010410-5b9410b6-84ce-4f87-bd67-b9856dbcb6b6.png)
+<img src="https://user-images.githubusercontent.com/88115439/138010410-5b9410b6-84ce-4f87-bd67-b9856dbcb6b6.png" width=600>
 
 
-### [BONUS] Interactive Prototype
 
 ## Schema 
 [This section will be completed in Unit 9]
