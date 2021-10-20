@@ -1,8 +1,7 @@
-# WWERapp
 Original App Design Project - README Template
 ===
 
-# APP_NAME_HERE
+# WWERapp
 
 ## Table of Contents
 1. [Overview](#Overview)
