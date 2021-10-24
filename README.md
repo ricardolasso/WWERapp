@@ -11,8 +11,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
-App helps you search for consoles and video game avaliability and prices by using alerts from existing social media accounts.
+WWERApp allows you to view information about consoles and video games such as avaliability and prices by taking API data from alerts by social media accounts and other existing game information websites.
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Game
@@ -30,8 +29,9 @@ App helps you search for consoles and video game avaliability and prices by usin
 
 * User can Sign in or sign up to your account to access the app
 * Each account stores your filters and app settings
-* After signing in, the app searches for information from twitter alert acounts and other social media to display depending on your filter preferences
-* App displays the console and game information on the home page
+* The app searches for information from twitter alert acounts and other social media API
+* The app displays information taken from social media depending on your filter preferences such as consoles and game genres
+* App displays the console and game information and picture on the home page
 * Home page has search bar to look for specific products
 * Can click products from Home page to go to the Product Information page which shows more detailed info about the pricing and avaliability
 * Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
@@ -89,6 +89,7 @@ App helps you search for consoles and video game avaliability and prices by usin
 [Add picture of your hand sketched wireframes in this section]
 <img src="https://user-images.githubusercontent.com/88115439/138010410-5b9410b6-84ce-4f87-bd67-b9856dbcb6b6.png" width=600>
 
+<img src="https://user-images.githubusercontent.com/23386463/138615807-5ab6bb80-831c-4754-bf58-f4d94664a26f.png" width=600>
 
 
 ## Schema 
