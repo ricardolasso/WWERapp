@@ -61,18 +61,24 @@ App helps you search for consoles and video game avaliability and prices by usin
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home Feed
+* Filters Tab
+* User Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login Screen
+   => Home Feed
+* Registration Screen
+   => Home Feed
+* Home Feed
+   => Detailed product view
+   => Links to find product listings for purchase
+   => User settings page
+* Filters
+   => None
+* User Settings
+   => Change profile picture
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
