@@ -91,6 +91,8 @@ WWERApp allows you to view information about consoles and video games such as av
 
 <img src="https://user-images.githubusercontent.com/23386463/138615807-5ab6bb80-831c-4754-bf58-f4d94664a26f.png" width=600>
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/88115439/138615957-21f42af0-fcb6-44c1-8945-5033657436e4.gif)
+
 
 ## Schema 
 [This section will be completed in Unit 9]
