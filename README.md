@@ -12,7 +12,7 @@ Original App Design Project - README Template
 ## Overview
 ### Description
 [Description of your app]
-app that helps you find consoles and video game avaliability and prices by using alerts from existing social media accounts.
+App helps you search for consoles and video game avaliability and prices by using alerts from existing social media accounts.
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Game
@@ -29,7 +29,8 @@ app that helps you find consoles and video game avaliability and prices by using
 **Required Must-have Stories**
 
 * [fill in your required user stories here]
-* Sign in or sign up to your account to access the app
+* User can Sign in or sign up to your account to access the app
+* Each account stores your filters and app settings
 * After signing in, the app searches for information from twitter alerts to display depending on your filter preferences
 * App displays the console and game information on the home page
 * Home page has search bar to look for specific products
@@ -41,18 +42,20 @@ app that helps you find consoles and video game avaliability and prices by using
 
 * [fill in your required user stories here]
 * Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
+* Possibly filters for location
 * When selecting the product information, have links to the product on websites like Amazon and Gamestop
 * Settings menu to change app colors and UI
 * ...
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
+* 
    * [list associated required story here]
    * ...
 * [list second screen here]
    * [list associated required story here]
    * ...
+
 
 ### 3. Navigation
 
