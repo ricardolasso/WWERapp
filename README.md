@@ -18,7 +18,7 @@ WWERApp allows you to view information about consoles and video games such as av
 - **Mobile:** IOS 15
 - **Story:** 
 - **Market:** Gamers
-- **Habit:**
+- **Habit:** finding information about games and consoles
 - **Scope:** 16 - 35 years
 
 ## Product Spec
