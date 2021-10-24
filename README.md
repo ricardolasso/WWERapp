@@ -16,9 +16,9 @@ WWERApp allows you to view information about consoles and video games such as av
 [Evaluation of your app across the following attributes]
 - **Category:** Game
 - **Mobile:** IOS 15
-- **Story:** Sign in and use the homepage to find to find games and consoles.
+- **Story:** sign in and use the homepage to find to find games and consoles. Also give you an description.
 - **Market:** Gamers
-- **Habit:** Finding information about games and consoles
+- **Habit:** finding information about games and consoles
 - **Scope:** 16 - 35 years
 
 ## Product Spec
