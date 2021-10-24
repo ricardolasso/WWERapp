@@ -28,35 +28,40 @@ App helps you search for consoles and video game avaliability and prices by usin
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
 * User can Sign in or sign up to your account to access the app
 * Each account stores your filters and app settings
-* After signing in, the app searches for information from twitter alerts to display depending on your filter preferences
+* After signing in, the app searches for information from twitter alert acounts and other social media to display depending on your filter preferences
 * App displays the console and game information on the home page
 * Home page has search bar to look for specific products
 * Can click products from Home page to go to the Product Information page which shows more detailed info about the pricing and avaliability
-* 
+* Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
+* User can access their profile to change their information and app settings
 * ...
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
-* Possibly filters for location
+* filters for location and price
 * When selecting the product information, have links to the product on websites like Amazon and Gamestop
 * Settings menu to change app colors and UI
 * ...
 
 ### 2. Screen Archetypes
 
-* 
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
-
-
+* Sign In
+   * User can log in or sign up
+* Home Page (Stream)
+   * User can view feed of product information for consoles and games based on filter preferences
+   * User can use search bar to look up specific products
+* Product Info
+   * User can view detailed product information such as pricing, avaliability, description, and locations
+   * User can click links to purchase products from sources such as Amazon or Gamestop
+* Filters Menu
+   * User can adjust feed information data by selecting options such as Brand, Product Type, and Game Genre
+* User Settings
+   * User can log out
+   * User can view their account information
+   * User can update their name, email, zip code
+   * User can change from light mode and dark mode
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
