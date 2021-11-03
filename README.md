@@ -99,16 +99,42 @@ WWERApp allows you to view information about consoles and video games such as av
 
 ## Schema 
 
-
+### Models
 
 | Property | Type     | Description |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |
+| -------- | -------- | --------    |
+| image    | File     | Image that user posts|
+| userName | String   | Name of user account |
+| like     | Number   | Number of likes in a specific post|
+| objectId | String   | Unique id for the user post (default field)|
+| password |String    | Password of a specific userName |
+| description |String |Description of the product posted |
+| price    |  Number  | Price of items  |
+| author | String | Creator of the post |
 
 
-### Models
-[Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
+
+* Signin Screen
+    * (Read/Get) User login 
+    * (Read/Get) User Signup 
+* Home Screen
+    * (Update/PUT) Images of products in screen
+    * (Create/POST) Create a new comment
+    * (Delete) Delete existing comment
+* Product Information Screen
+    * (Create/POST) create a new like 
+    * (Delete) Delete existing like
+    * (Read/GET) Get the price 
+    * (Update/PUT) Put image of product 
+* Filter Screen
+    * (Read/Get) items user is searching for
+    * (Delete) existing filter
+* User settings Screen
+    * (Read/GET) Name
+    * (Read/GET) Email address
+    * (Read/GET) Zip Code
+
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
