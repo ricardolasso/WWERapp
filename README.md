@@ -99,3 +99,16 @@ WWERApp allows you to view information about consoles and video games such as av
 
 ## Schema 
 
+
+
+| Property | Type     | Description |
+| -------- | -------- | -------- |
+| Text     | Text     | Text     |
+
+
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
