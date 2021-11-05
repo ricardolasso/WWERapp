@@ -116,25 +116,155 @@ WWERApp allows you to view information about consoles and video games such as av
 ### Networking
 
 * Signin Screen
-    * (Read/Get) User login 
-    * (Read/Get) User Signup 
+    * (Read/Get) User login
+
+```
+@IBAction func signInButton(_ sender: Any) {
+        let username = userNameField.text!
+        let password = passwordField.text!
+        PFUser.logInWithUsername(inBackground: username, password: password){
+            (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else{
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+    }  
+```
+
+* 
+    * (Read/Get) User SignUp
+
+
+ ```
+@IBAction func signUpButton(_ sender: Any) {
+        let user = PFUser()
+        user.username = userNameField.text
+        user.password = passwordField.text
+        user.signUpInBackground{(success, error)in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+    }
+```
+        
+        
+     
 * Home Screen
     * (Update/PUT) Images of products in screen
+
+func tableView(_ tableView: UITableView , numberofRowsinSection section: Int) -> Int {
+let post = posts[section]
+return post
+}
+
+tableView.reloadData()
+
     * (Create/POST) Create a new comment
-    * (Delete) Delete existing comment
+    
+@IBAction func onSubmitButton(_ sender: Any) {
+        let post = PFObject(className: "Posts")
+        
+post["caption"] = commentField.text!
+post["auther"] = PFUser.current()!
+       
+let imageData = imageView.image!.pngData()
+let file = PFFileObject(name: "image.png", data: imageData!)
+        post["image"] = file
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error")
+            }
+        }
+    }    
+    
 * Product Information Screen
-    * (Create/POST) create a new like 
+    * (Create/POST) create a new like
+        let like = PFObject(classname: "like")
+        like["user"] = PFUser.current()
+        like["post"] = post
+        
+        post.add(like, forKey: "likes")
+        
+        post.saveInBackground(){
+            (success, error) in
+            if success {
+                print("like saved")
+            }
+            else {
+                print("error saving like")
+            }
+        }
     * (Delete) Delete existing like
-    * (Read/GET) Get the price 
-    * (Update/PUT) Put image of product 
-* Filter Screen
-    * (Read/Get) items user is searching for
-    * (Delete) existing filter
+        let currentUser = PFUser.current()
+        let query = PFQuery(classname: "like")
+        query.whereKey("user", equalTo: currentUser)
+        query.whereKey("post", equalTo: post)
+        query.findObjectsInBackground { (like: [PFObject]?, error: Error?) in
+            if let error = error { 
+                print(error.localizedDescription)
+            } else if let posts = posts {
+                print("Successfully retrieved the like")
+                like.deleteInBackground(){
+                    (success, error) in
+                    if success {
+                        print("like deleted")
+                    }
+                    else {
+                        print("error deleting like")
+                    }
+                }
+                post.saveInBackground(){
+                    (success, error) in
+                    if success {
+                        print("post saved")
+                    }
+                    else {
+                        print("error saving post")
+                    }
+                }
+             }
+        }
+
+* 
+    * (Read/GET) Get the price    
+```
+let post = posts[indexPath.row]
+let price = post["price"] as! Double 
+```
+
+* (Update/PUT) Put image of product 
+```
+let post = posts[indexPath.row]
+let image = post["image"]
+```
 * User settings Screen
     * (Read/GET) Name
-    * (Read/GET) Email address
-    * (Read/GET) Zip Code
+
+```
+let user = PFUser.current()
+let name = user.username
+```    
+
+* (Read/GET) Email address
+    
+```
+let user = PFUser.current()
+let email = user.email
+```
+
+* (Read/GET) Zip Code
+
+```
+let user = PFUser.current()
+let zipCode = user["zipcode"] as! Int
+```
 
 - [Create basic snippets for each Parse network request]
-
-
