@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		39F3F2272739FCE3007DBDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F3F2252739FCE3007DBDAF /* LaunchScreen.storyboard */; };
 		39F3F2322739FCE4007DBDAF /* WWERappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F2312739FCE4007DBDAF /* WWERappTests.swift */; };
 		39F3F23D2739FCE4007DBDAF /* WWERappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F23C2739FCE4007DBDAF /* WWERappUITests.swift */; };
+		39F3F24B273A0061007DBDAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F24A273A0061007DBDAF /* LoginViewController.swift */; };
 		4B406518DAD3519F140F6538 /* Pods_WWERapp_WWERappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C295FDA39FF6EDA8EB690 /* Pods_WWERapp_WWERappUITests.framework */; };
 		A6DBE29A64A42A0AFCE81E71 /* Pods_WWERapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE7FD6BD207A74250684F54 /* Pods_WWERapp.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		39F3F2382739FCE4007DBDAF /* WWERappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWERappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F3F23C2739FCE4007DBDAF /* WWERappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWERappUITests.swift; sourceTree = "<group>"; };
 		39F3F23E2739FCE4007DBDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F3F24A273A0061007DBDAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5774257F5E49D535B1817AB4 /* Pods-WWERapp-WWERappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERapp-WWERappUITests.debug.xcconfig"; path = "Target Support Files/Pods-WWERapp-WWERappUITests/Pods-WWERapp-WWERappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		866C295FDA39FF6EDA8EB690 /* Pods_WWERapp_WWERappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWERapp_WWERappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34AB271258923E02C7C2D2A /* Pods-WWERappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERappTests.release.xcconfig"; path = "Target Support Files/Pods-WWERappTests/Pods-WWERappTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				39F3F2232739FCE3007DBDAF /* Assets.xcassets */,
 				39F3F2252739FCE3007DBDAF /* LaunchScreen.storyboard */,
 				39F3F2282739FCE3007DBDAF /* Info.plist */,
+				39F3F24A273A0061007DBDAF /* LoginViewController.swift */,
 			);
 			path = WWERapp;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 				E8D920D7F71A3C873429EFFC /* Pods-WWERappTests.debug.xcconfig */,
 				B34AB271258923E02C7C2D2A /* Pods-WWERappTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F3F24B273A0061007DBDAF /* LoginViewController.swift in Sources */,
 				39F3F21F2739FCE2007DBDAF /* ViewController.swift in Sources */,
 				39F3F21B2739FCE2007DBDAF /* AppDelegate.swift in Sources */,
 				39F3F21D2739FCE2007DBDAF /* SceneDelegate.swift in Sources */,
