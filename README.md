@@ -30,6 +30,7 @@ WWERApp allows you to view information about consoles and video games such as av
 
 **Required Must-have Stories**
 
+* User can view starting screen with logo and sign in options
 * User can Sign in or sign up to your account to access the app
 * Each account stores your filters and app settings
 * The app searches for information from twitter alert acounts and other social media API
