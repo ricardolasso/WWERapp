@@ -30,24 +30,24 @@ WWERApp allows you to view information about consoles and video games such as av
 
 **Required Must-have Stories**
 
-* User can view starting screen with logo and sign in options
-* User can Sign in or sign up to your account to access the app
-* Each account stores your filters and app settings
-* The app searches for information from twitter alert acounts and other social media API
-* The app displays information taken from social media depending on your filter preferences such as consoles and game genres
-* App displays the console and game information and picture on the home page
-* Home page has search bar to look for specific products
-* Can click products from Home page to go to the Product Information page which shows more detailed info about the pricing and avaliability
-* Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
-* User can access their profile to change their information and app settings
-* ...
+- [x]  User can view starting screen with logo and sign in options
+- [x] User can Sign in or sign up to your account to access the app
+- [ ] Each account stores your filters and app settings
+- [ ] The app searches for information from twitter alert acounts and other social media API
+- [ ] The app displays information taken from social media depending on your filter preferences such as consoles and game genres
+- [ ] App displays the console and game information and picture on the home page
+- [ ] Home page has search bar to look for specific products
+- [ ] Can click products from Home page to go to the Product Information page which shows more detailed info about the pricing and avaliability
+- [ ] Filter menus for selecting what types of games, genres, or consoles you are interested in viewing information for
+- [ ] User can access their profile to change their information and app settings
+- [ ] ...
 
 **Optional Nice-to-have Stories**
 
-* filters for location and price
-* When selecting the product information, have links to the product on websites like Amazon and Gamestop
-* Settings menu to change app colors and UI
-* ...
+- [ ] filters for location and price
+- [ ] When selecting the product information, have links to the product on websites like Amazon and Gamestop
+- [ ] Settings menu to change app colors and UI
+- [ ] ...
 
 ### 2. Screen Archetypes
 
