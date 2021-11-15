@@ -9,7 +9,11 @@ target 'WWERapp' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
-
+  
+  # delete these two if it doesnt work
+  pod 'AFNetworking'
+  pod 'BDBOAuth1Manager'
+  
   target 'WWERappTests' do
     inherit! :search_paths
     # Pods for testing
@@ -19,4 +23,6 @@ target 'WWERapp' do
     # Pods for testing
   end
 
+ 
+  
 end
