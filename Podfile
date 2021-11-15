@@ -9,6 +9,7 @@ target 'WWERapp' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
+  pod 'BDBOAuth1Manager'
 
   target 'WWERappTests' do
     inherit! :search_paths

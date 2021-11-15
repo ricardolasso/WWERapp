@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DNg-tR-AVY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DNg-tR-AVY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -93,6 +92,22 @@
             <point key="canvasLocation" x="209" y="697"/>
         </scene>
         <!--Item-->
+        <scene sceneID="LL6-H1-XXF">
+            <objects>
+                <viewController id="AYD-Md-TuF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ST-bb-M9r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q7J-rd-Dtg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="SEQ-8F-sAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-xK-gBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="437"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="afe-G5-jwo">
             <objects>
                 <viewController id="vhZ-UU-9RX" sceneMemberID="viewController">
@@ -100,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ley-D0-aul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="19"/>
+            <point key="canvasLocation" x="1096" y="-282"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Lb-Gq-Bqr">
@@ -114,6 +129,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vhZ-UU-9RX" kind="relationship" relationship="viewControllers" id="G3d-UP-MiH"/>
+                        <segue destination="AYD-Md-TuF" kind="relationship" relationship="viewControllers" id="oK0-9E-oDb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv8-Ru-FUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
