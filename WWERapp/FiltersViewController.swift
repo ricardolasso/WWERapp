@@ -9,19 +9,12 @@ import UIKit
 
 class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
+    @IBOutlet weak var priceMin: UITextField!
+    @IBOutlet weak var priceMax: UITextField!
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return typeData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return typeData[row]
-    }
-    
+    @IBOutlet weak var brandControl: UISegmentedControl!
     @IBOutlet weak var typePicker: UIPickerView!
+
     
     var typeData: [String] = [String]()
     
@@ -35,6 +28,19 @@ class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         // Do any additional setup after loading the view.
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return typeData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return typeData[row]
+    }
+    
     
 
     /*
