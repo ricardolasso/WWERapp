@@ -1,24 +1,7 @@
 PODS:
-  - AFNetworking (3.0.4):
-    - AFNetworking/NSURLSession (= 3.0.4)
-    - AFNetworking/Reachability (= 3.0.4)
-    - AFNetworking/Security (= 3.0.4)
-    - AFNetworking/Serialization (= 3.0.4)
-    - AFNetworking/UIKit (= 3.0.4)
-  - AFNetworking/NSURLSession (3.0.4):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.0.4)
-  - AFNetworking/Security (3.0.4)
-  - AFNetworking/Serialization (3.0.4)
-  - AFNetworking/UIKit (3.0.4):
-    - AFNetworking/NSURLSession
   - Alamofire (5.4.3)
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
-  - BDBOAuth1Manager (2.0.0):
-    - AFNetworking/NSURLSession (~> 3.0.0)
   - Bolts/Tasks (1.9.1)
   - MessageInputBar (0.4.1):
     - MessageInputBar/Core (= 0.4.1)
@@ -29,31 +12,25 @@ PODS:
     - Bolts/Tasks (= 1.9.1)
 
 DEPENDENCIES:
-  - AFNetworking
   - AlamofireImage
-  - BDBOAuth1Manager
   - MessageInputBar
   - Parse
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
     - Alamofire
     - AlamofireImage
-    - BDBOAuth1Manager
     - Bolts
     - MessageInputBar
     - Parse
 
 SPEC CHECKSUMS:
-  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
-  BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
   Parse: 081fb8755c3000fd11df817eec235def233d0af3
 
-PODFILE CHECKSUM: 03723f25bd40bd9a81760ec20c34d1269adbe49d
+PODFILE CHECKSUM: 3388d038b896420bb3a5f98cf51f552bc08d8afc
 
 COCOAPODS: 1.11.2

@@ -9,7 +9,6 @@ target 'WWERapp' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
-  pod 'BDBOAuth1Manager'
   
   # delete these two if it doesnt work
   pod 'AFNetworking'
