@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-567" y="19"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="CyP-Vk-M6q">
             <objects>
-                <viewController id="h1E-OA-Ah6" sceneMemberID="viewController">
+                <viewController id="h1E-OA-Ah6" userLabel="Setting View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIX-eT-v74">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,23 +90,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bse-oK-Bhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="46"/>
+            <point key="canvasLocation" x="209" y="697"/>
         </scene>
         <!--Item-->
         <scene sceneID="afe-G5-jwo">
             <objects>
                 <viewController id="vhZ-UU-9RX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vGM-Or-60I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="doc-h6-xOM"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
                     <tabBarItem key="tabBarItem" title="Item" id="q13-cU-YsN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ley-D0-aul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.840579710145" y="18.75"/>
+            <point key="canvasLocation" x="1010" y="19"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Lb-Gq-Bqr">
