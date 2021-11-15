@@ -12,8 +12,6 @@ target 'WWERapp' do
   pod 'BDBOAuth1Manager'
   
   # delete these two if it doesnt work
-  pod 'AFNetworking'
-  pod 'BDBOAuth1Manager'
   
   target 'WWERappTests' do
     inherit! :search_paths
