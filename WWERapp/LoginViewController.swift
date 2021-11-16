@@ -12,10 +12,23 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
+    var priceMin: Double = 0.0
+    var priceMax: Double = 0.0
+    var productType: String = "All"
+    var brand: String = "All"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        priceMin = FilterSettings.priceMin
+        priceMax = FilterSettings.priceMax
+        productType = FilterSettings.productType
+        brand = FilterSettings.brand
     }
     
     @IBAction func onLogin(_ sender: Any) {

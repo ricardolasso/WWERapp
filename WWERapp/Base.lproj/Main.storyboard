@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="209" y="697"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="LL6-H1-XXF">
             <objects>
                 <viewController id="AYD-Md-TuF" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                         <viewLayoutGuide key="safeArea" id="q7J-rd-Dtg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SEQ-8F-sAk"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="SEQ-8F-sAk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-xK-gBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,9 +175,6 @@
                                     <segment title="Nintendo"/>
                                     <segment title="All"/>
                                 </segments>
-                                <connections>
-                                    <action selector="brandControl:" destination="vhZ-UU-9RX" eventType="valueChanged" id="mvH-Zc-GxJ"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HnV-Ap-b2o"/>
@@ -232,8 +229,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vhZ-UU-9RX" kind="relationship" relationship="viewControllers" id="G3d-UP-MiH"/>
                         <segue destination="AYD-Md-TuF" kind="relationship" relationship="viewControllers" id="oK0-9E-oDb"/>
+                        <segue destination="vhZ-UU-9RX" kind="relationship" relationship="viewControllers" id="G3d-UP-MiH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv8-Ru-FUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
