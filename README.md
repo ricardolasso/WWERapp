@@ -32,8 +32,8 @@ WWERApp allows you to view information about consoles and video games such as av
 
 - [x]  User can view starting screen with logo and sign in options
 - [x] User can Sign in or sign up to your account to access the app
-- [ ] Each account stores your filters and app settings
-- [ ] The app searches for information from twitter alert acounts and other social media API
+- [x] Each account stores your filters and app settings
+- [x] The app searches for information from twitter alert acounts and other social media API
 - [ ] The app displays information taken from social media depending on your filter preferences such as consoles and game genres
 - [ ] App displays the console and game information and picture on the home page
 - [ ] Home page has search bar to look for specific products
@@ -44,7 +44,7 @@ WWERApp allows you to view information about consoles and video games such as av
 
 **Optional Nice-to-have Stories**
 
-- [ ] filters for location and price
+- [x] filters for location and price
 - [ ] When selecting the product information, have links to the product on websites like Amazon and Gamestop
 - [ ] Settings menu to change app colors and UI
 - [ ] ...
