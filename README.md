@@ -272,5 +272,8 @@ let zipCode = user["zipcode"] as! Int
 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/88115439/140846257-bb8dd58d-4d07-431d-9098-0c8fc0044267.gif)
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/88115439/141035624-66831883-084a-4702-b07c-192a9c40a217.gif)
+![ezg![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/88115439/141884974-b00d08b5-4a2a-4bcf-afc0-fffe9a7f9f80.gif)
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/88115439/141885012-e5b305e6-c1ff-40c6-a84a-1ca6b9f9bc9b.gif)
+
 
