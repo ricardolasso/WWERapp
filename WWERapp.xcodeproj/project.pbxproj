@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24019DA2DA84580CF177A161 /* Pods_WWERappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA83C315B9DEEB6846623DAB /* Pods_WWERappTests.framework */; };
+		398FD8942741FC6C004092F1 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398FD8932741FC6C004092F1 /* FiltersViewController.swift */; };
 		39F3F21B2739FCE2007DBDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F21A2739FCE2007DBDAF /* AppDelegate.swift */; };
 		39F3F21D2739FCE2007DBDAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F21C2739FCE2007DBDAF /* SceneDelegate.swift */; };
 		39F3F21F2739FCE2007DBDAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F21E2739FCE2007DBDAF /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		2B4D16664E97FA24DACB8CF6 /* Pods-WWERapp-WWERappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERapp-WWERappUITests.release.xcconfig"; path = "Target Support Files/Pods-WWERapp-WWERappUITests/Pods-WWERapp-WWERappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		398FD8932741FC6C004092F1 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		39F3F2172739FCE2007DBDAF /* WWERapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWERapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F3F21A2739FCE2007DBDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39F3F21C2739FCE2007DBDAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		39F3F2192739FCE2007DBDAF /* WWERapp */ = {
 			isa = PBXGroup;
 			children = (
+				398FD8932741FC6C004092F1 /* FiltersViewController.swift */,
 				39F3F21A2739FCE2007DBDAF /* AppDelegate.swift */,
 				39F3F21C2739FCE2007DBDAF /* SceneDelegate.swift */,
 				39F3F21E2739FCE2007DBDAF /* ViewController.swift */,
@@ -417,6 +420,7 @@
 				39F3F21F2739FCE2007DBDAF /* ViewController.swift in Sources */,
 				39F3F21B2739FCE2007DBDAF /* AppDelegate.swift in Sources */,
 				39F3F21D2739FCE2007DBDAF /* SceneDelegate.swift in Sources */,
+				398FD8942741FC6C004092F1 /* FiltersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
