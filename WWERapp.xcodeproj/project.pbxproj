@@ -20,6 +20,7 @@
 		39F3F24B273A0061007DBDAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3F24A273A0061007DBDAF /* LoginViewController.swift */; };
 		3DE8E0902741F32E00D4437F /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8E08F2741F32E00D4437F /* TwitterAPICaller.swift */; };
 		4B406518DAD3519F140F6538 /* Pods_WWERapp_WWERappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C295FDA39FF6EDA8EB690 /* Pods_WWERapp_WWERappUITests.framework */; };
+		8CD37A972744937400C1A2B6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD37A962744937400C1A2B6 /* HomeTableViewController.swift */; };
 		A6DBE29A64A42A0AFCE81E71 /* Pods_WWERapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE7FD6BD207A74250684F54 /* Pods_WWERapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		3DE8E08F2741F32E00D4437F /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
 		5774257F5E49D535B1817AB4 /* Pods-WWERapp-WWERappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERapp-WWERappUITests.debug.xcconfig"; path = "Target Support Files/Pods-WWERapp-WWERappUITests/Pods-WWERapp-WWERappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		866C295FDA39FF6EDA8EB690 /* Pods_WWERapp_WWERappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWERapp_WWERappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD37A962744937400C1A2B6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		B34AB271258923E02C7C2D2A /* Pods-WWERappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERappTests.release.xcconfig"; path = "Target Support Files/Pods-WWERappTests/Pods-WWERappTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5FD3D45E85561200271439A /* Pods-WWERapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWERapp.debug.xcconfig"; path = "Target Support Files/Pods-WWERapp/Pods-WWERapp.debug.xcconfig"; sourceTree = "<group>"; };
 		CA83C315B9DEEB6846623DAB /* Pods_WWERappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWERappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				39F3F2252739FCE3007DBDAF /* LaunchScreen.storyboard */,
 				39F3F2282739FCE3007DBDAF /* Info.plist */,
 				39F3F24A273A0061007DBDAF /* LoginViewController.swift */,
+				8CD37A962744937400C1A2B6 /* HomeTableViewController.swift */,
 			);
 			path = WWERapp;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				3DE8E0902741F32E00D4437F /* TwitterAPICaller.swift in Sources */,
 				39F3F21F2739FCE2007DBDAF /* ViewController.swift in Sources */,
 				39F3F21B2739FCE2007DBDAF /* AppDelegate.swift in Sources */,
+				8CD37A972744937400C1A2B6 /* HomeTableViewController.swift in Sources */,
 				39F3F21D2739FCE2007DBDAF /* SceneDelegate.swift in Sources */,
 				398FD8942741FC6C004092F1 /* FiltersViewController.swift in Sources */,
 			);
