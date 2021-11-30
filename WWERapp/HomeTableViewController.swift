@@ -24,8 +24,8 @@ class HomeTableViewController: UITableViewController {
 
     func loadTweet(){
         
-        let myUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
-        let myParams = ["count": 10]
+        let myUrl = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+        let myParams = ["user_id": 1460056760459436035,"count": 20]
         
         
         TwitterAPICaller.client?.getDictionariesRequest(url: myUrl, parameters: myParams, success: { (tweet: [NSDictionary]) in
