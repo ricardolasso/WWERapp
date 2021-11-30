@@ -79,7 +79,6 @@
         <!--Setting View Controller-->
         <scene sceneID="CyP-Vk-M6q">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bse-oK-Bhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="h1E-OA-Ah6" userLabel="Setting View Controller" customClass="SettingsViewController" customModule="WWERapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIX-eT-v74">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -103,6 +102,9 @@
                                     <segment title="Light"/>
                                     <segment title="Dark"/>
                                 </segments>
+                                <connections>
+                                    <action selector="colorModeControl:" destination="h1E-OA-Ah6" eventType="valueChanged" id="uoy-qn-mKH"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RX8-vF-D1a"/>
@@ -121,9 +123,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="lTh-km-ohi"/>
                     <connections>
-                        <outlet property="colorModeControl" destination="khI-eB-HKg" id="fZE-aA-AAD"/>
+                        <outlet property="colorModeControl" destination="khI-eB-HKg" id="297-Bk-iJe"/>
+                        <outlet property="control" destination="khI-eB-HKg" id="YMC-tr-M1k"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bse-oK-Bhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2817" y="-283"/>
         </scene>
@@ -332,7 +336,6 @@
         <!--Filters-->
         <scene sceneID="NFW-dT-zWk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mXc-sB-s8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iRv-Mp-rAd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Filters" id="q13-cU-YsN"/>
                     <toolbarItems/>
@@ -345,6 +348,7 @@
                         <segue destination="vhZ-UU-9RX" kind="relationship" relationship="rootViewController" id="x27-am-7Tb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXc-sB-s8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095.6521739130435" y="-282.58928571428572"/>
         </scene>

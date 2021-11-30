@@ -8,15 +8,28 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
     @IBOutlet weak var colorModeControl: UISegmentedControl!
+    @IBOutlet var control: UISegmentedControl?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+        control?.backgroundColor = .white
     }
     
 
+    @IBAction func colorModeControl(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            view.backgroundColor = .white
+        }
+        else if sender.selectedSegmentIndex == 1 {
+            view.backgroundColor = .black
+        }
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
