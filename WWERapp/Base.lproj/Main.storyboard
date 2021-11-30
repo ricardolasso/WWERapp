@@ -32,7 +32,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-vr-qLj">
                                 <rect key="frame" x="95" y="516" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="onLogin:" destination="DNg-tR-AVY" eventType="touchUpInside" id="R7M-GV-Upt"/>
                                 </connections>
@@ -40,7 +42,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzA-yJ-ldz">
                                 <rect key="frame" x="259" y="516" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="DNg-tR-AVY" eventType="touchUpInside" id="b3e-At-Zcm"/>
                                 </connections>
@@ -63,6 +67,20 @@
                                 <rect key="frame" x="24" y="57" width="366" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Game Information Hub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdH-KB-Kkt">
+                                <rect key="frame" x="48" y="674" width="342" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WWERApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rZ-AM-dva">
+                                <rect key="frame" x="9" y="581" width="443" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hTP-uJ-bf6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAe-UI-Jxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="19"/>
+            <point key="canvasLocation" x="-568.1159420289855" y="18.75"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="CyP-Vk-M6q">
@@ -167,8 +185,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEb-cf-UpO" userLabel="Tweet">
-                                            <rect key="frame" x="93" y="37" width="301" height="168"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEb-cf-UpO" userLabel="Tweet">
+                                            <rect key="frame" x="93" y="37" width="301" height="157"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -181,7 +199,11 @@
                                         <constraint firstItem="TEb-cf-UpO" firstAttribute="leading" secondItem="gKx-s0-3Lv" secondAttribute="trailing" constant="8" id="Df7-NH-4Gb"/>
                                         <constraint firstItem="TEb-cf-UpO" firstAttribute="trailing" secondItem="UuM-Oe-XOg" secondAttribute="trailingMargin" id="FmH-I1-hZB"/>
                                         <constraint firstAttribute="trailing" secondItem="fkT-Sx-IlJ" secondAttribute="trailing" constant="130" id="Pvg-Zx-nUA"/>
+                                        <constraint firstItem="gKx-s0-3Lv" firstAttribute="leading" secondItem="UuM-Oe-XOg" secondAttribute="leadingMargin" id="QAa-7P-hRE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fkT-Sx-IlJ" secondAttribute="trailing" constant="110" id="UMN-iz-TrR"/>
                                         <constraint firstItem="fkT-Sx-IlJ" firstAttribute="top" secondItem="UuM-Oe-XOg" secondAttribute="topMargin" id="YgH-fu-rmD"/>
+                                        <constraint firstItem="TEb-cf-UpO" firstAttribute="top" secondItem="fkT-Sx-IlJ" secondAttribute="bottom" id="jRW-c4-cF3"/>
+                                        <constraint firstItem="gKx-s0-3Lv" firstAttribute="top" secondItem="UuM-Oe-XOg" secondAttribute="topMargin" id="lGY-Zl-Bzy"/>
                                         <constraint firstItem="TEb-cf-UpO" firstAttribute="top" secondItem="fkT-Sx-IlJ" secondAttribute="bottom" constant="4" id="rJV-gp-5RC"/>
                                         <constraint firstItem="gKx-s0-3Lv" firstAttribute="top" secondItem="UuM-Oe-XOg" secondAttribute="topMargin" id="sEo-Ff-5vU"/>
                                     </constraints>
@@ -371,6 +393,12 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
