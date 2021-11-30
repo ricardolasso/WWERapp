@@ -26,7 +26,7 @@
                                 <rect key="frame" x="95" y="418" width="218" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-vr-qLj">
                                 <rect key="frame" x="95" y="516" width="38" height="30"/>
@@ -191,7 +191,7 @@
                             <outlet property="delegate" destination="zUE-TN-iS8" id="i3l-Zt-EcO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="uhj-ik-AJo"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="feed_tab" id="uhj-ik-AJo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mfz-bx-kHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,7 +337,7 @@
         <scene sceneID="NFW-dT-zWk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iRv-Mp-rAd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Filters" id="q13-cU-YsN"/>
+                    <tabBarItem key="tabBarItem" title="Filters" image="gearshape" catalog="system" id="q13-cU-YsN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RX6-oG-4jE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -355,6 +355,8 @@
     </scenes>
     <resources>
         <image name="Untitled-1" width="195" height="193"/>
+        <image name="feed_tab" width="25" height="25"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
