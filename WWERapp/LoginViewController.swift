@@ -29,8 +29,6 @@ class LoginViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-    
-<<<<<<< Updated upstream
     override func viewDidAppear(_ animated: Bool) {
         let mode = UserDefaults.standard.integer(forKey: "colorMode")
         if mode == 0 {
@@ -41,8 +39,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-=======
->>>>>>> Stashed changes
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
