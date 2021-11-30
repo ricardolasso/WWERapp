@@ -43,6 +43,10 @@ class SettingsViewController: UIViewController {
     
     
     
+    @IBAction func onLogout(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "loggedIn")
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     
