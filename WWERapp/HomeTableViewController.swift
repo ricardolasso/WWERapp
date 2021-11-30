@@ -35,7 +35,7 @@ class HomeTableViewController: UITableViewController {
 
     func loadTweet(){
         
-        let myUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+        let myUrl = "https://api.twitter.com/1.1/search/tweets.json" 
         let myParams = ["count": 20]
         
         
@@ -66,7 +66,7 @@ class HomeTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell") as! TweetCellTableViewCell
         
         cell.userNameLabel.text = "Some name"
-        cell.tweetContent.text = tweetArray[indexPath.row]["text"] as! String
+        cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
         
         return cell
     }
