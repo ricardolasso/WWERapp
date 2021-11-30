@@ -18,6 +18,16 @@ class SettingsViewController: UIViewController {
     
         control?.overrideUserInterfaceStyle = .dark
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.overrideUserInterfaceStyle = .light
+        }
+        else if mode == 1{
+            view.overrideUserInterfaceStyle = .dark
+        }
+    }
     
 
     @IBAction func colorModeControl(_ sender: UISegmentedControl) {
