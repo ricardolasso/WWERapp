@@ -81,6 +81,15 @@
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-jI-hKu">
+                                <rect key="frame" x="5" y="831" width="106" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login Debug"/>
+                                <connections>
+                                    <action selector="onSignInDebug:" destination="DNg-tR-AVY" eventType="touchUpInside" id="wSJ-ye-ZZm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hTP-uJ-bf6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
