@@ -97,7 +97,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="khI-eB-HKg">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="khI-eB-HKg">
                                 <rect key="frame" x="20" y="136" width="194" height="32"/>
                                 <segments>
                                     <segment title="Light"/>
@@ -122,7 +122,13 @@
                             <constraint firstItem="cRd-rv-lZG" firstAttribute="leading" secondItem="RX8-vF-D1a" secondAttribute="leading" constant="20" id="uCf-ps-MUE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lTh-km-ohi"/>
+                    <navigationItem key="navigationItem" id="lTh-km-ohi">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="n5Q-2R-rrC">
+                            <connections>
+                                <action selector="onLogout:" destination="h1E-OA-Ah6" id="UiS-5M-KfG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="colorModeControl" destination="khI-eB-HKg" id="297-Bk-iJe"/>
                         <outlet property="control" destination="khI-eB-HKg" id="YMC-tr-M1k"/>
