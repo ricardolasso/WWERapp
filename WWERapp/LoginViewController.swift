@@ -45,12 +45,23 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user != nil {
-                UserDefaults.standard.set(true, forKey: "loggedIn")
-                UserDefaults.standard.set(username, forKey: "username")
-                UserDefaults.standard.set(password, forKey: "password")
-                self.usernameField.text = ""
-                self.passwordField.text = ""
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                // Authenticate Twitter
+                let myURL = "https://api.twitter.com/oauth/request_token"
+                TwitterAPICaller.client?.login(url: myURL, success: {
+                    
+                    // Save login info
+                    UserDefaults.standard.set(true, forKey: "loggedIn")
+                    UserDefaults.standard.set(username, forKey: "username")
+                    UserDefaults.standard.set(password, forKey: "password")
+                    self.usernameField.text = ""
+                    self.passwordField.text = ""
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                    
+                }, failure:{ (Error) in
+                    print("Invalid Login")
+                    
+                })
+                
             } else{
                 print("Error: \(error?.localizedDescription)")
             }
