@@ -26,6 +26,14 @@ class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var typePicker: UIPickerView!
 
     
+    @IBAction func onPlaystationButton(_ sender: Any) {
+    let myUrl = "https://api.twitter.com/oauth/request_token"
+        TwitterAPICaller.client?.login(url: myUrl, success: {
+            print("logging in")
+        }, failure: { (Error) in
+            print("Could not log in!")
+        })
+    }
     var typeData: [String] = [String]()
     
     override func viewDidLoad() {

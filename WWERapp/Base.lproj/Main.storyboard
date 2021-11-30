@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bse-oK-Bhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2817" y="-283"/>
+            <point key="canvasLocation" x="2815.9420289855075" y="-283.25892857142856"/>
         </scene>
         <!--Home-->
         <scene sceneID="NmZ-3y-giU">
@@ -202,7 +202,7 @@
         <scene sceneID="afe-G5-jwo">
             <objects>
                 <viewController id="vhZ-UU-9RX" customClass="FiltersViewController" customModule="WWERapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9xe-uT-HmZ">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9xe-uT-HmZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
