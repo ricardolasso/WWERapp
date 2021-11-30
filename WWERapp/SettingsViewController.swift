@@ -14,18 +14,20 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        control?.backgroundColor = .white
+        control?.overrideUserInterfaceStyle = .dark
     }
     
 
     @IBAction func colorModeControl(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            view.backgroundColor = .white
+            view.overrideUserInterfaceStyle = .light
         }
         else if sender.selectedSegmentIndex == 1 {
-            view.backgroundColor = .black
+            view.overrideUserInterfaceStyle = .dark
         }
     }
+    
+    
     
     
     

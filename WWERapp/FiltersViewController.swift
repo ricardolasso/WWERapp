@@ -18,6 +18,7 @@ import UIKit
 
 class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
+    
     @IBOutlet weak var priceMin: UITextField!
     @IBOutlet weak var priceMax: UITextField!
     
