@@ -32,10 +32,10 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let mode = UserDefaults.standard.integer(forKey: "colorMode")
         if mode == 0 {
-            view.backgroundColor = .white
+            view.overrideUserInterfaceStyle = .light
         }
         else if mode == 1 {
-            view.backgroundColor = .black
+            view.overrideUserInterfaceStyle = .dark
         }
     }
     
