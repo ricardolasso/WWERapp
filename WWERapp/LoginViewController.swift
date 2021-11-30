@@ -13,11 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    var priceMin: Double = 0.0
-    var priceMax: Double = 0.0
-    var productType: String = "All"
-    var brand: String = "All"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +20,13 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        priceMin = FilterSettings.priceMin
-        priceMax = FilterSettings.priceMax
-        productType = FilterSettings.productType
-        brand = FilterSettings.brand
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.backgroundColor = .white
+        }
+        else if mode == 1 {
+            view.backgroundColor = .black
+        }
     }
     
     @IBAction func onLogin(_ sender: Any) {

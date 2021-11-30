@@ -21,6 +21,16 @@ class HomeTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.backgroundColor = .white
+        }
+        else if mode == 1 {
+            view.backgroundColor = .black
+        }
+    }
 
     func loadTweet(){
         
