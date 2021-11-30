@@ -214,9 +214,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Xbox One X">
+                                        <fragment content="Playstation 4 Pro">
                                             <attributes>
                                                 <font key="NSFont" size="28" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -303,7 +304,7 @@
                                 <rect key="frame" x="20" y="229" width="108" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Xbox-Series-X-Logo-scaled" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-mf-O6C">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PS4 Pro logo" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-mf-O6C">
                                 <rect key="frame" x="18" y="330" width="112" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -445,15 +446,15 @@
             </objects>
             <point key="canvasLocation" x="382.60869565217394" y="1273.6607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Ps 5digital View Controller-->
         <scene sceneID="QSw-Z9-r6r">
             <objects>
-                <viewController id="HYI-Y9-JpL" sceneMemberID="viewController">
+                <viewController id="HYI-Y9-JpL" customClass="ps5digitalViewController" customModule="WWERapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0na-Eq-7fg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6430161_sd.jpg;maxHeight=640;maxWidth=550" translatesAutoresizingMaskIntoConstraints="NO" id="tPM-lw-1G3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PS5 Digital Edition" translatesAutoresizingMaskIntoConstraints="NO" id="tPM-lw-1G3">
                                 <rect key="frame" x="82" y="64" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -569,37 +570,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUn-0F-Ve7">
-                                <rect key="frame" x="15" y="710" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Walmart.com">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="systemIndigoColor"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bestbuy.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2N-2B-gHN">
                                 <rect key="frame" x="15" y="739" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gamestop.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bq-j7-AFm">
                                 <rect key="frame" x="15" y="768" width="116" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="walmart.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pBR-6a-0cS">
+                                <rect key="frame" x="15" y="702" width="154" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dvh-gD-xxq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="UITextView" destination="pBR-6a-0cS" id="mVo-Z5-yUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rvc-DV-8Rl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1052,10 +1051,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="6430161_sd.jpg;maxHeight=640;maxWidth=550" width="550" height="278"/>
         <image name="PS4 Pro" width="600" height="600"/>
+        <image name="PS4 Pro logo" width="1600" height="1067"/>
+        <image name="PS5 Digital Edition" width="550" height="278"/>
         <image name="Untitled-1" width="195" height="193"/>
-        <image name="Xbox-Series-X-Logo-scaled" width="1920" height="1080"/>
         <image name="feed_tab" width="25" height="25"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="ps5 disk" width="612" height="612"/>
