@@ -48,6 +48,14 @@ class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.backgroundColor = .white
+        }
+        else if mode == 1 {
+            view.backgroundColor = .black
+        }
+        
         typePicker.selectRow(FilterSettings.productTypeIndex, inComponent: 0, animated: true)
         brandControl.selectedSegmentIndex = FilterSettings.brandIndex
         priceMin.text = String(format: "%.2f", FilterSettings.priceMin)
@@ -87,6 +95,10 @@ class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         return typeData[row]
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "loggedIn")
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*

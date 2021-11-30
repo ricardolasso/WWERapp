@@ -5,6 +5,8 @@
 //  Created by Will Couture on 11/29/21.
 //
 
+
+
 import UIKit
 
 class SettingsViewController: UIViewController {
@@ -25,6 +27,8 @@ class SettingsViewController: UIViewController {
         else if sender.selectedSegmentIndex == 1 {
             view.overrideUserInterfaceStyle = .dark
         }
+        
+        UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "colorMode")
     }
     
     

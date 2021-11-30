@@ -15,11 +15,22 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTweet()
+        self.tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.backgroundColor = .white
+        }
+        else if mode == 1 {
+            view.backgroundColor = .black
+        }
     }
 
     func loadTweet(){
@@ -52,7 +63,7 @@ class HomeTableViewController: UITableViewController {
     // log in Button for PS5, xbox, nintendo here
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCellTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell") as! TweetCellTableViewCell
         
         cell.userNameLabel.text = "Some name"
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as! String

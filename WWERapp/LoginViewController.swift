@@ -13,22 +13,30 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    var priceMin: Double = 0.0
-    var priceMax: Double = 0.0
-    var productType: String = "All"
-    var brand: String = "All"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if UserDefaults.standard.bool(forKey: "loggedIn") {
+            let username = UserDefaults.standard.string(forKey: "username")!
+            let password = UserDefaults.standard.string(forKey: "password")!
+            PFUser.logInWithUsername(inBackground: username, password: password){
+                (user, error) in
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else{
+                    print("Error: \(error?.localizedDescription)")
+                }
+            }
+        }
         // Do any additional setup after loading the view.
     }
-    
     override func viewDidAppear(_ animated: Bool) {
-        priceMin = FilterSettings.priceMin
-        priceMax = FilterSettings.priceMax
-        productType = FilterSettings.productType
-        brand = FilterSettings.brand
+        let mode = UserDefaults.standard.integer(forKey: "colorMode")
+        if mode == 0 {
+            view.backgroundColor = .white
+        }
+        else if mode == 1 {
+            view.backgroundColor = .black
+        }
     }
     
     @IBAction func onLogin(_ sender: Any) {
@@ -37,6 +45,11 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "loggedIn")
+                UserDefaults.standard.set(username, forKey: "username")
+                UserDefaults.standard.set(password, forKey: "password")
+                self.usernameField.text = ""
+                self.passwordField.text = ""
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")
