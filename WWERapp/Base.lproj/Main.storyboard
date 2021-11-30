@@ -297,6 +297,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UEs-ux-5ff">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Si9-fO-7qk">
+                            <connections>
+                                <action selector="onLogout:" destination="vhZ-UU-9RX" id="FaW-Bc-eAn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="MiS-4H-Van">
                             <connections>
                                 <segue destination="h1E-OA-Ah6" kind="show" id="bai-KT-xhT"/>

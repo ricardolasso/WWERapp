@@ -15,10 +15,22 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if UserDefaults.standard.bool(forKey: "loggedIn") {
+            let username = UserDefaults.standard.string(forKey: "username")!
+            let password = UserDefaults.standard.string(forKey: "password")!
+            PFUser.logInWithUsername(inBackground: username, password: password){
+                (user, error) in
+                if user != nil {
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                } else{
+                    print("Error: \(error?.localizedDescription)")
+                }
+            }
+        }
         // Do any additional setup after loading the view.
     }
     
+<<<<<<< Updated upstream
     override func viewDidAppear(_ animated: Bool) {
         let mode = UserDefaults.standard.integer(forKey: "colorMode")
         if mode == 0 {
@@ -29,12 +41,19 @@ class LoginViewController: UIViewController {
         }
     }
     
+=======
+>>>>>>> Stashed changes
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
         PFUser.logInWithUsername(inBackground: username, password: password){
             (user, error) in
             if user != nil {
+                UserDefaults.standard.set(true, forKey: "loggedIn")
+                UserDefaults.standard.set(username, forKey: "username")
+                UserDefaults.standard.set(password, forKey: "password")
+                self.usernameField.text = ""
+                self.passwordField.text = ""
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else{
                 print("Error: \(error?.localizedDescription)")

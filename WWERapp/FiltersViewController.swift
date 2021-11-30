@@ -94,6 +94,10 @@ class FiltersViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         return typeData[row]
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "loggedIn")
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*
